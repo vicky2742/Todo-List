@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Todo List Website</title>
+    <link rel="shortcut icon" href="./to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/dd8c49730d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+  
+    <nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <em>Switch Theme</em>
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="todo-list js-todo-list"></ul>
+      <div class="empty-state">
+        <h1 class="app-title">My Todo</h1>
+        <p class="empty-state__description">
+          Type in the below field 👇 and press enter to add your todo in the
+          list
+        </p>
+      </div>
+      <form class="formselect">
+        <input
+          autofocus
+          type="text"
+          class="inputselect"
+          placeholder="Example : Exam"
+        />
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
